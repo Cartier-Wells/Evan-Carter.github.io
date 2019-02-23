@@ -1,4 +1,4 @@
-/* Text */
+/* Text & Headings */
 h1,
 .h1,
 h2,
@@ -35,11 +35,14 @@ h1,
 .h1 {
   font-size: 45px;
    padding-left: 150px;
-   margin-top: 100px;
+   margin-top: 50px;
+    font-family: 'Quicksand';
 }
 h2,
 .h2 {
   font-size: 50px;
+    padding-left: 150px;
+    margin-top: 100px;
 }
 h3,
 .h3 {
@@ -47,11 +50,14 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 22px;
+  font-size: 30px;
+    margin-left: 200px;
 }
 h5,
 .h5 {
-  font-size: 18px;
+  font-size: 35px;
+    padding-left: 220px;
+    margin-top: 150px;
 }
 h6,
 .h6 {
@@ -62,7 +68,6 @@ a {
   text-decoration: none;
 }
 
-/* General */
 body {
   margin: 0;
   padding: 50px 0 0;
@@ -74,14 +79,45 @@ body {
       background: url("/images/background.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Quicksand';
+   margin-left: 100px;
+     width: 700px;
+     overflow-wrap: normal;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 .container {
   max-width: 1000px;
 }
 
-/* Header */
+.contact {
+    padding: 5px;
+    margin-left: 200px;
+    font-size: 16px;
+    font-family: 'Quicksand'
+}
+
+.links {
+padding: 5px;
+    margin-left: 200px;
+    font-size: 16px;
+    font-family: 'Quicksand'
+  
+}
+
+a {
+      font-size: 16px;
+    color: #000000;
+    font-family: 'Quicksand'
+}
+
+/* Header/Logo */
 .header {
   width: 220px;
   bottom: 0;
@@ -91,87 +127,6 @@ body {
 }
 .header-text {
   margin-bottom: 50px;
-}
-.header-text blockquote {
-  font-size: 16px;
-  padding-left: 50px;
-}
-.header-text blockquote:before {
-  font-size: 30px;
-}
-.menu-left .header {
-  text-align: left;
-}
-.menu-left .main-menu .sub-menu {
-  padding-left: 0;
-  padding-right: 20px;
-  right: 100%;
-  left: auto;
-  text-align: right;
-}
-.table {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.table-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-.main-menu {
-  font-family: 'Quicksand';
-  letter-spacing: 1px;
-  font-size: 25px;
-  line-height: 24px;
-}
-.main-menu ul,
-.main-menu li {
-  list-style: none;
-  margin-left: 30px;
-  margin: 0;
-    position: fixed;
-    text-align: left
-}
-.main-menu .menu-list > li > a {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  display: block;
-    color: #000000;
-}
-.main-menu .active a {
-  color: #000000;
-}
-.main-menu li {
-  position: relative;
-}
-.main-menu li:hover > .sub-menu {
-  opacity: 1;
-  visibility: visible;
-}
-.main-menu .sub-menu {
-  position: absolute;
-  width: 200px;
-  top: 0;
-  left: 100%;
-  font-size: 14px;
-  text-align: left;
-  visibility: hidden;
-  padding-left: 20px;
-  opacity: 0;
-}
-.main-menu .sub-menu li {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #ababab;
-}
-.main-menu .sub-menu li:first-child {
-  padding-top: 10px;
-}
-.main-menu .sub-menu li:last-child {
-  padding-bottom: 10px;
-}
-.main-menu .sub-menu a {
-  color: #000000 !important;
 }
 .logo {
   font-size: 40px;
@@ -201,12 +156,10 @@ body {
    margin-left: 150px;
 }
 .project-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10;
 }
 .project-item .title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: 
   opacity: 0;
   visibility: hidden;
 }
@@ -235,27 +188,4 @@ body {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-
-/* Footer */
-.footer-inner {
-  margin-top: 80px;
-  border-top: 1px solid #ababab;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-left: 80px;
-  margin-right: 50px;
-  font-size: 12px;
-}
-.footer-inner .title {
-  font-size: 20px;
-  font-weight: 700;
-    font-family: 'Quicksand'
-}
-.footer-inner ul {
-  list-style: none;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-  font-family: 'Quicksand'
-}
 
