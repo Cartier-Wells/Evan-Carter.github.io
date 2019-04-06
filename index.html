@@ -2,105 +2,149 @@
 <html>
 
 <head>
-	<title>Cartier-Wells</title>
-    
+    <title>Cartier-Wells</title>
+
     <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Quicksand" />
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
 </head>
 
 <body class="home">
-                                
-	<!-- Name -->
-	<div class="logo">
-    	<a href="index.html">Evan Carter</a>
+
+    <!-- Name -->
+    <div class="logo">
+        <b href="index.html">Evan Carter</b>
     </div>
-<div>
-    <h5>About Me</h5>
-    <p>
-    My name is Evan Carter and I am a Software Engineering student at Florida Gulf Coast University. I've spent the majority of my life living in Cape Coral, Florida. Computer programming and - to a lesser extent - graphic design have been interests of mine since the start of highschool, when I first began taking classes in them.   During my highschool programming career, I had the privilege of showing off my final project, Scavenger, at the annual Charter School Rally, seeing over 300 players. The project is now retired to my itch.io page.
-        
-        <br> <br>
-      I now have four years educational experience in both programming and design and continue to self teach and work on projects with other programmers.
-        This experience has left me proficient in C#, HTML, and Java, as well as the IDEs Microsoft Visual Studio and Unity.
-        
-        <br> <br>
-        
-    </p>
-</div>
+    <canvas id="myCanvas" width="700" height="60"></canvas>
+    <script>
+        var canvasElement = document.querySelector("#myCanvas");
+        var context = canvasElement.getContext("2d");
+
+        context.beginPath();
+        context.moveTo(212, 10);
+        context.lineTo(187, 25);
+        context.lineTo(212, 40);
+        context.closePath();
+
+
+        context.fillStyle = "#000000";
+        context.fill();
+
+        context.beginPath();
+        context.moveTo(450, 10);
+        context.lineTo(475, 25);
+        context.lineTo(450, 40);
+        context.closePath();
+
+        context.fillStyle = "#000000";
+        context.fill();
+
+    </script>
+    <div>
+        <h5>About</h5>
+        <p>
+            My name is Evan Carter and I am a Software Engineering student at Florida Gulf Coast University. I've spent the majority of my life living in Cape Coral, Florida. Computer programming and - to a lesser extent - graphic design have been interests of mine since the start of highschool, when I first began taking classes in them. During my highschool programming career, I had the privilege of showing off my final project, Scavenger, at the annual Charter School Rally, seeing over 300 players. The project is now retired to my itch.io page.
+
+            <br> <br>
+            I now have four years educational experience in both programming and design and continue to self teach and work on projects with other programmers.
+            This experience has left me proficient in C#, HTML, and Java, as well as the IDEs Microsoft Visual Studio and Unity.
+
+            <br> <br>
+
+            An overview of computer science as an educational major:
+            <a href="/files/fieldsReport.pdf">Fields Report</a>
+
+            <br> <br>
+
+            <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=ZNMbEbz2dys">
+            </video>
+        </p>
+    </div>
 
     <div>
-<h4 class="title">Links and Contacts</h4>   
+
+        <h4 class="title">
+            Links and Contacts</h4>
+
         <ul class="links">
-      <li>
-    	GitHub: <a href="https://github.com/Cartier-Wells">https://github.com/Cartier-Wells</a>
-     </li>
-     <li>
-        itch.io: <a href="https://evancarter.itch.io/">https://evancarter.itch.io/</a>
-	</li>
-    <li>
-	  Scratch: <a href="https://scratch.mit.edu/users/Cartier_Wells/">https://scratch.mit.edu/users/Cartier_Wells/</a>
-	</li>
-    <li>
-	  Codecademy: <a href="https://www.codecademy.com/Cartier_Wells">https://www.codecademy.com/Cartier_Wells</a>
-	</li>
-	</ul>
+            <li>
+                GitHub: <a href="https://github.com/Cartier-Wells">https://github.com/Cartier-Wells</a>
+            </li>
+            <li>
+                itch.io: <a href="https://evancarter.itch.io/">https://evancarter.itch.io/</a>
+            </li>
+            <li>
+                Scratch: <a href="https://scratch.mit.edu/users/Cartier_Wells/">https://scratch.mit.edu/users/Cartier_Wells/</a>
+            </li>
+            <li>
+                Codecademy: <a href="https://www.codecademy.com/Cartier_Wells">https://www.codecademy.com/Cartier_Wells</a>
+            </li>
+        </ul>
         <br>
-	<ul class="contact">
-      <li>
-    	Phone: [239-699-4601]
-     </li>
-     <li>
-        Email: ejcarter2379@eagle.fgcu.edu
-	</li>
-    <li>
-	  Florida Gulf Coast University
-	</li>
-	</ul>
+        <ul class="contact">
+            <li>
+                Phone: [239-699-4601]
+            </li>
+            <li>
+                Email: ejcarter2379@eagle.fgcu.edu
+            </li>
+            <li>
+                Florida Gulf Coast University
+            </li>
+        </ul>
     </div>
-        
+
+    <svg width="1000" height="1000">
+        <rect x="205" y="225" rx="20" ry="20" width="300" height="215" style="fill:black;opacity:0.5" />
+
+        <rect x="200" y="480" rx="20" ry="20" width="540" height="400" style="fill:black;opacity:0.5" />
+    </svg>
+
     <div class="projects">
-                <div class="header-text">
-			      <h2>Projects</h2>
-				</div>
-				<div class="tiled-gallery">
-				  <div class="project-item">
-				    <a href="https://evancarter.itch.io/scavenger">
-				      <img src="/images/scavenger.png" alt="Scavenger">
-                	</a>
-				  <h3 class="title">
-				    <a href="#">Scavenger</a>
-				  </h3>
-				</div>
-
-							<div class="project-item">
-								<a href="https://scratch.mit.edu/projects/283111420/">
-									<img src="/images/carthus.png" alt="Carthus">
-								</a>
-								<h3 class="title">
-									<a href="#">Carthus</a>
-								</h3>
-							</div> 
+        <div class="header-text">
+            <h2>Projects</h2>
         </div>
-                     <div class="header-text">
-                         <h2>Graphic Design</h2>
-				</div>
-				<div class="tiled-gallery">
-							<div class="project-item">
-									<img src="images/Frostwolf.png" alt="Frostwolves">
-								<h3 class="title">
-                                    <a href="#">Frostwolf</a>
-								</h3>
-							</div>
+        <div class="tiled-gallery">
+            <div class="project-item">
+                <a href="https://evancarter.itch.io/scavenger">
+                    <img src="/images/scavenger.png" alt="Scavenger">
 
-							<div class="project-item">
-									<img src="images/Iron.png" alt="Iron">
-								<h3 class="title">
-                                    <a href="#">Iron</a>
-								</h3>
-							</div>
-						</div>
-					</div>
+                </a>
+                <h3 class="title">
+                    <a href="#">Scavenger</a>
+                </h3>
+            </div>
+
+            <div class="project-item">
+                <a href="https://scratch.mit.edu/projects/283111420/">
+                    <img src="/images/carthus.png" alt="Carthus">
+                </a>
+                <h3 class="title">
+                    <a href="#">Carthus</a>
+                </h3>
+            </div>
+        </div>
+        <div class="header-text">
+            <h2>Graphic Design</h2>
+        </div>
+        <div class="tiled-gallery">
+            <div class="project-item">
+                <img src="images/Frostwolf.png" alt="Frostwolves">
+                <h3 class="title">
+                    <a href="#">Frostwolf</a>
+                </h3>
+            </div>
+
+            <div class="project-item">
+                <img src="images/Iron.png" alt="Iron">
+                <h3 class="title">
+                    <a href="#">Iron</a>
+                </h3>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
