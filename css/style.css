@@ -1,3 +1,6 @@
+/* Evan Carter
+CSS code for my website at Cartier-Wells.github.io */
+
 /* Text & Headings */
 h1,
 .h1,
@@ -213,6 +216,6 @@ b {
 canvas {}
 
 svg {
-    position:absolute;
+    position: absolute;
     z-index: -1;
 }
