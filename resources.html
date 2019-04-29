@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="UTF-8">
+<!-- Header Bar -->
+
+<head>
+    <title>Cartier-Wells</title>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper row1">
+        <header id="header" class="clear">
+            <div id="hgroup">
+                <h1><a href="index.html">Evan Carter</a></h1>
+                <h2>Resources</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li class="last"><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapper row2">
+        <div id="container" class="clear">
+            <div id="content">
+                <article class="two_quarter">
+
+                    An overview of computer sciences as educational majors:
+                    <a href="files/fieldsReport.pdf">Fields Report</a>
+                </article>
+
+                 <canvas id="myCanvas" width="900" height="100"></canvas>
+
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();
+                        ctx.moveTo(0, 50);
+                        ctx.lineTo(900, 50);
+                        ctx.stroke();
+                    </script>
+                
+                <article class="two_quarter">
+                    A brief explanation of software engineering:
+                    <br> <br>
+                    <video width="720" height="480" controls>
+                        <source src="files/UCSoftwareEngineering.mp4" type="video/mp4">
+                    </video>
+                </article>
+            </div>
+        </div>
+    </div>
+
+</body></html>

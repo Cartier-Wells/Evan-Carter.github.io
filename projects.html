@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <!-- Header Bar -->
 
 <head>
@@ -13,11 +13,13 @@
         <header id="header" class="clear">
             <div id="hgroup">
                 <h1><a href="index.html">Evan Carter</a></h1>
+                <h2>Projects</h2>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                     <li><a href="resources.html">Resources</a></li>
                     <li class="last"><a href="projects.html">Projects</a></li>
                 </ul>
             </nav>
@@ -29,43 +31,75 @@
         <div id="container" class="clear">
             <div id="content">
                 <section>
-                    <ul>
-                        <li>
-                            <article class="two_quarter">
-                                <figure><img class="resize" src="images/scavenger.png" alt="Scavenger">
-                                    <figcaption>
-                                        <h2>Scavenger</h2>
-                                        <p>Created in my high school programming class as part of a competition, Scavenger is an upgrade to a tutorial provided by Unity that adds new mechanics and refined animations. The game was exhibited at a rally and now rests on my itch.io page <a href="https://evancarter.itch.io/">here</a>.</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </li>
 
-                        <li>
-                            <article class="two_quarter">
-                                <figure><img class="resize" src="images/carthus.png" alt="Carthus">
-                                    <figcaption>
-                                        <h2>Carthus</h2>
-                                        <p>One of the first projects I worked on in college, Carthus is essentially a tech demo that shows off some of the skills I picked up from working on Scavenger. Though only a single sequence, Carthus is "playable" <a href="https://scratch.mit.edu/projects/283111420/">here</a>.</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </li>
+                    <article class="two_quarter">
+                        <figure><img class="resize" src="images/scavenger.png" alt="Scavenger">
+                            <figcaption>
+                                <h2>Scavenger</h2>
+                                <p>Created in my high school programming class as part of a competition, Scavenger is an upgrade to a tutorial provided by Unity that adds new mechanics and refined animations. The game was exhibited at a rally and now rests on my itch.io page <a href="https://evancarter.itch.io/">here</a>.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
+                    <article class="two_quarter">
+                        <figure><img class="resize" src="images/carthus.png" alt="Carthus">
+                            <figcaption>
+                                <h2>Carthus</h2>
+                                <p>One of the first projects I worked on in college, Carthus is essentially a tech demo that shows off some of the skills I picked up from working on Scavenger. Though only a single sequence, Carthus is "playable" <a href="https://scratch.mit.edu/projects/283111420/">here</a>.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
+                    <article class="two_quarter">
+                        <figure><img class="resize" src="images/Frostwolf.png" alt="Frostwolf">
+                            <figcaption>
+                                <h2>Frostwolf</h2>
+                                <p>One of my best graphic design projects from high school. What I think looks good in programming tends to transfer into what I think looks good in design.</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
-                        <li>
-                            <article class="two_quarter">
-                                <figure><img class="resize" src="images/Frostwolf.png" alt="Frostwolf">
-                                    <figcaption>
-                                        <h2>Frostwolf</h2>
-                                        <p>One of my best graphic design projects from high school. What I think looks good in programming tends to transfer into what I think looks good in design.</p>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </li>
+                    <canvas id="myCanvas" width="900" height="150"></canvas>
 
-                    </ul>
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();
+                        ctx.moveTo(0, 75);
+                        ctx.lineTo(900, 75);
+                        ctx.stroke();
+                    </script>
+
+                    <article class="four_quarter">
+                        <h2>Caesar Cipher</h2>
+                        <p></p>
+                        Input: <input id="inputText">
+                        Shift: <input id="inputShift">
+                        <button type="button" onclick="cipher();">Convert </button>
+                        Output: <output id="result"></output>
+
+                        <script>
+                            function cipher() {
+                                var x = document.getElementById("inputText").value;
+                                var shift = document.getElementById("inputShift").value;
+                                var result = '';
+                                for (var i = 0, len = x.length; i < len; i++) {
+                                    if (x[i] == x[i].toUpperCase()) {
+                                        var item = x[i].charCodeAt(0);
+                                        var encoded = ((item - 65 + shift) % 26) + 97;
+                                        result = result + String.fromCharCode(encoded);
+                                    } else if (x[i] == x[i].toLowerCase()) {
+                                        var item = x[i].charCodeAt(0);
+                                        var encoded = ((item - 97 + shift) % 26) + 97;
+                                        result = result + String.fromCharCode(encoded);
+                                    }
+                                }
+                                document.getElementById('result').value = result;
+                            }
+                        </script>
+
+                    </article>
+
                 </section>
             </div>
         </div>
