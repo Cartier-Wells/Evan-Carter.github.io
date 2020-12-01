@@ -101,8 +101,19 @@
 
                     </article>
 
+                    <canvas id="myCanvas" width="900" height="150"></canvas>
+
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();
+                        ctx.moveTo(0, 75);
+                        ctx.lineTo(900, 75);
+                        ctx.stroke();
+                    </script>
+
                     <article class="two_quarter">
-                        <figure><embed src="files/AAR FUTURE SOLUTIONS.pdf" alt="Future Solutions Poster">
+                        <figure><embed src="files/AAR FUTURE SOLUTIONS.pdf" width=100% height=100% alt="Future Solutions Poster">
                             <figcaption>
                                 <h2>Future Solutions Poster</h2>
                                 <p>The AAR is meant to be the answer to ever-increasing demand for innovation in entertainment. The intent is for it to be able to provide entertainment experiences like no other, but to also aid in daily living.
